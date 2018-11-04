@@ -1,7 +1,7 @@
 import unittest
 from fizzbuzz import fizzbuzz
 
-class TestStringMethods(unittest.TestCase):
+class TestFizzBuzz(unittest.TestCase):
 
     def test_fizzbuzz(self):
         self.assertEqual(fizzbuzz(15), 'FizzBuzz')

@@ -27,6 +27,8 @@ Here is a longer list:
 
 Source: https://www.mathsisfun.com/numbers/fibonacci-sequence.html
 
+
+## Running the code
 To test the implementation, run the following command inside this folder:
 
 ```sh

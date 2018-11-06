@@ -19,10 +19,10 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome('abbc'))
 
     def test_palindrome_with_odd_length(self):
-        self.assertTrue(is_palindrome('abcba'))
+        self.assertTrue(is_palindrome('abCbA'))
         
     def test_non_palindrome_with_odd_length(self):
-        self.assertFalse(is_palindrome('abcbc'))
+        self.assertFalse(is_palindrome('abcbC'))
 
 if __name__ == '__main__':
     unittest.main()

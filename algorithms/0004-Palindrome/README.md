@@ -8,7 +8,7 @@ A single line which contains the input string.
 
 ## Output Format
 
-A single line which contains YES or NO in uppercase.
+True or False
 
 ## Sample Input
 

@@ -2,11 +2,11 @@
 
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
-## Input Format
+## Input parameter
 
-A single line which contains the input string.
+A string.
 
-## Output Format
+## Function Return
 
 True or False
 
@@ -14,7 +14,7 @@ True or False
 
 A man, a plan, a canal: Panama
 
-## Sample Output
+## Sample Return
 
 True
 

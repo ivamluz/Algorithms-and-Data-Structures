@@ -11,6 +11,8 @@ Reverse digits of an integer.
 * x = 1200, return 21
 * x = -1200, return -21
 
+See the [test cases](https://github.com/ivamluz/Algorithms-and-Data-Structures/blob/master/algorithms/0005-ReverseInt/test_reverse_int.py) for more examples.
+
 ## Input Format
 
 An integer x

@@ -6,9 +6,10 @@ Reverse digits of an integer.
 
 ## Examples
 
-**Example1:** x = 123, return 321
-
-**Example2:** x = -123, return -321
+* x = 123, return 321
+* x = -123, return -321
+* x = 1200, return 21
+* x = -1200, return -21
 
 ## Input Format
 
@@ -27,9 +28,3 @@ A reversed integer
 ```
 321
 ```
-
-## Explanation
-
-Reverse digits of an integer.
-
-If the integer's last digit is 0, what should the output be? i.e., cases such as 10, 100.

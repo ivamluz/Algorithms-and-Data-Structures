@@ -20,5 +20,23 @@ class TestIsAnagram(unittest.TestCase):
   def test_second_string_none(self):
     self.assertFalse(is_anagram('earth', None))
 
+  def test_different_length_strings(self):
+    self.assertFalse(is_anagram('area', 'era'))
+
+  def test_same_string_same_case(self):
+    self.assertTrue(is_anagram('area', 'area'))
+
+  def test_same_string_different_case(self):
+    self.assertTrue(is_anagram('AREA', 'area'))
+
+  def test_different_strings_anagram(self):
+    self.assertTrue(is_anagram('Earth', 'Heart'))
+
+  def test_different_strings_same_size_non_anagram(self):
+    self.assertFalse(is_anagram('Earth', 'Heard'))
+
+  def test_different_strings_different_sizes_non_anagram(self):
+    self.assertFalse(is_anagram('Era', 'Area'))
+
 if __name__ == '__main__':
   unittest.main()

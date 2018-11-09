@@ -32,7 +32,7 @@ class TestIsAnagram(unittest.TestCase):
   def test_different_strings_anagram(self):
     self.assertTrue(is_anagram('Earth', 'Heart'))
 
-  def test_different_strings_same_size_non_anagram(self):
+  def test_different_strings_same_length_non_anagram(self):
     self.assertFalse(is_anagram('Earth', 'Heard'))
 
 if __name__ == '__main__':

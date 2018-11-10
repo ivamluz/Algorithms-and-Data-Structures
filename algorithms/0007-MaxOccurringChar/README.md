@@ -1,6 +1,6 @@
 # Maximum occurring character
 
-**Objective:** Given a string, write an algorithm to find the character in string which occurs maximum number of times. If more than one character has maximum and same count then print all of them
+**Objective:** Given a string, write an algorithm to find the character in string which occurs maximum number of times. If more than one character has maximum and same count then return all of them.
 
 ## Examples:
 ```python
@@ -29,4 +29,4 @@ max_occurring_chars("")
 None
 ```
 
-For more examples, see the [unit tests](#).
+For more examples, see the [unit tests](https://github.com/ivamluz/Algorithms-and-Data-Structures/blob/master/algorithms/0007-MaxOccurringChar/test_max_occurring_chars.py).

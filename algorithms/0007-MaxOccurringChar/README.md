@@ -5,7 +5,7 @@
 ## Examples:
 ```python
 # Single most occurring char
-max_chars("tutorial horizon")
+max_occurring_chars("tutorial horizon")
 # output: 
 {
   "o": 3
@@ -14,7 +14,7 @@ max_chars("tutorial horizon")
 
 ```python
 # Multiple most occurring chars
-max_chars("abcabcdefabcab")
+max_occurring_chars("abcabcdefabcab")
 # output:
 {
   "a": 4,
@@ -24,7 +24,7 @@ max_chars("abcabcdefabcab")
 
 ```python
 # Empty string
-max_chars("")
+max_occurring_chars("")
 # output:
 None
 ```

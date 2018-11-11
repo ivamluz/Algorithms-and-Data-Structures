@@ -10,7 +10,7 @@ def chunk(arr, size):
   while start < len(arr):
     end = start + size
     chunked.append(arr[start:end])
-    start += size
+    start = end
 
   return chunked
   

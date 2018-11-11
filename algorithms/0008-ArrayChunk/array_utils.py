@@ -1,2 +1,16 @@
 def chunk(arr, size):
-  pass
+  if size <= 0:
+    raise ValueError('Size shoudl be greather than 0.')
+
+  if not arr:
+    return []
+
+  start = 0
+  chunked = []
+  while start < len(arr):
+    end = start + size
+    chunked.append(arr[start:end])
+    start += size
+
+  return chunked
+  

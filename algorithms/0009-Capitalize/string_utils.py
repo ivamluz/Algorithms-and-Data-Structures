@@ -1,0 +1,2 @@
+def capitalize(str):
+  pass

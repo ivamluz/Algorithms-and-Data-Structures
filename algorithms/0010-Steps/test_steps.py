@@ -10,5 +10,14 @@ class TestSteps(unittest.TestCase):
     with self.assertRaises(ValueError):
       self.assertRaises(steps(0))
 
+  def test_single_step(self):
+    self.assertEquals(steps(1), "#")
+
+  def test_multiple_steps(self):
+    expected_output = '''#  
+## 
+###'''
+    self.assertEquals(steps(3), expected_output)
+
 if __name__ == '__main__':
   unittest.main()

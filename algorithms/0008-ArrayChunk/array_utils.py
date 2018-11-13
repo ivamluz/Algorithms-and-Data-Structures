@@ -1,6 +1,6 @@
 def chunk(arr, size):
   if size <= 0:
-    raise ValueError('Size shoudl be greather than 0.')
+    raise ValueError('Size should be greather than 0.')
 
   if not arr:
     return []

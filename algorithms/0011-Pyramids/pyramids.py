@@ -1,0 +1,2 @@
+def pyramids(size):
+  pass

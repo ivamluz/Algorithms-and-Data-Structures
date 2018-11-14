@@ -14,9 +14,9 @@ class TestSteps(unittest.TestCase):
     self.assertEquals(steps(1), "#")
 
   def test_multiple_steps(self):
-    expected_output = '''#  
-## 
-###'''
+    expected_output =  '#  \n'
+    expected_output += '## \n'
+    expected_output += '###'
     self.assertEquals(steps(3), expected_output)
 
 if __name__ == '__main__':

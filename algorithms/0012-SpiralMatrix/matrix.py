@@ -22,7 +22,7 @@ def spiral(size):
 
   start_row = 0
   start_column = 0
-  end_row = size -1
+  end_row = size - 1
   end_column = size - 1
   current_row = 0
   current_column = 0

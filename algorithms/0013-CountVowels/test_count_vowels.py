@@ -18,7 +18,7 @@ class TestCountVowels(unittest.TestCase):
     self.assertEquals(count_vowels('AbcdE'), 2)
 
   def test_string_with_mixed_case_vowels(self):
-    self.assertEquals(count_vowels('AbcdE'), 2)
+    self.assertEquals(count_vowels('Abcde'), 2)
 
 if __name__ == '__main__':
   unittest.main()

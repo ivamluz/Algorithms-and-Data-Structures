@@ -14,3 +14,9 @@ count_vowels('Abcde...hiJ...nOPq')
 # output
 4
 ```
+
+```python
+count_vowels('bCd')
+# output
+0
+```

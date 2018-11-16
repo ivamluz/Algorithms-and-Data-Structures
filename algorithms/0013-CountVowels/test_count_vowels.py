@@ -20,8 +20,8 @@ class TestCountVowels(unittest.TestCase):
   def test_string_with_mixed_case_vowels(self):
     self.assertEquals(count_vowels('Abcde'), 2)
 
-  def test_should_not_count_more_than_once(self):
-    self.assertEquals(count_vowels('AaEeIiOoUu'), 5)
+  def test_should_count_more_than_one_occurrence(self):
+    self.assertEquals(count_vowels('A man watches a Bird.'), 6)
 
 if __name__ == '__main__':
   unittest.main()

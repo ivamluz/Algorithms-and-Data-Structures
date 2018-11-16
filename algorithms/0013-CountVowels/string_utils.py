@@ -10,4 +10,6 @@ def count_vowels(str):
     str
   )
 
-  return len(cleaned_str)
+  unique_vowels = set(cleaned_str.lower())
+
+  return len(unique_vowels)

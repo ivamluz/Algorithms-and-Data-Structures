@@ -8,11 +8,19 @@ For example, given the array ```arr = [1, 1, 0, -1, -1]``` there are  elements, 
 
 ```python
 [
+  0.400000, # Index 2 contains the ratio of positive numbers
   0.400000, # Index 0 contains the ration of negative numbers
-  0.400000, # Index 1 contains the ratio of zeros
-  0.200000  # Index 2 contains the ratio of positive numbers
+  0.200000  # Index 1 contains the ratio of zeros
 ]
 ```
+
+## Output Format
+
+The function must return an array with 3 entries:
+
+0. A decimal representing of the fraction of positive numbers in the array compared to its size.
+1. A decimal representing of the fraction of negative numbers in the array compared to its size.
+2. A decimal representing of the fraction of zeros in the array compared to its size.
 
 ## Sample Input
 ```python

@@ -27,12 +27,12 @@ Return a tuple containing the respective minimum and maximum values that can be 
 
 ## Sample Input
 ```
-1 2 3 4 5
+[1, 2, 3, 4, 5]
 ```
 
 ## Sample Output
 ```
-10 14
+(10, 14)
 ```
 
 ## Explanation

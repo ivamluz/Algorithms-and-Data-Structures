@@ -6,11 +6,7 @@ Given a time in [12-hour AM/PM format](https://en.wikipedia.org/wiki/12-hour_clo
 
 ## Function Description
 
-Complete the timeConversion function in the editor below. It should return a new string representing the input time in 24 hour format.
-
-timeConversion has the following parameter(s):
-
-s: a string representing time in **12** hour format
+Write a function that receives a string representing time in **12** hour format and return sa new string representing the input time in 24 hour format.
 
 ## Input Format
 

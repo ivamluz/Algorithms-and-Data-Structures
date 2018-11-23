@@ -1,10 +1,7 @@
 import re
 
 def convert_time(am_pm_time):
-    if not am_pm_time:
-        return ''
-
-    matches = re.match( r'^([0-1][0-9]):([0-5][0-9]):([0-5][0-9])(AM|PM)$', am_pm_time)
+    matches = re.match( r'^([0-1][0-9]):([0-5][0-9]):([0-5][0-9])(AM|PM)$', str(am_pm_time))
 
     if not matches:
         return ''

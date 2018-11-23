@@ -14,12 +14,6 @@ def convert_time(am_pm_time):
     seconds = matches.group(3)
     period = matches.group(4)
 
-    # if hours == '12':
-    #     if period == 'AM':
-    #         hours = '00'
-    #     else:
-    #         hours = str(12 + int(hours))
-
     if period == 'AM':
         if hours == '12':
             hours = '00'

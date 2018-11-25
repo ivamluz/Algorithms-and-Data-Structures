@@ -7,6 +7,8 @@ For example, ```arr = [1, 3, 5, 7, 9]```. Our minimum sum is ```1 + 3 + 5 + 7 = 
 (16, 24)
 ```
 
+**Source:** [HackerRank](https://www.hackerrank.com/challenges/mini-max-sum/problem)
+
 ## Function Description
 
 Write a function that receives an array of integers with 5 elements and returns a tuple containing the minimum sum and the maximum sum of ```4``` of ```5``` elements.

@@ -14,6 +14,8 @@ For example, given the array ```arr = [1, 1, 0, -1, -1]``` there are  elements, 
 ]
 ```
 
+**Source:** [HackerRank](https://www.hackerrank.com/challenges/plus-minus/problem)
+
 ## Output Format
 
 The function must return an array with 3 entries:

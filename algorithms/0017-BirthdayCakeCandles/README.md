@@ -25,6 +25,8 @@ arr = [3, 2, 1, 3]
 
 Print the number of candles that can be blown out on a new line.
 
+**Source:** [HackerRank](https://www.hackerrank.com/challenges/birthday-cake-candles/problem)
+
 ## Sample Input
 
 ```python

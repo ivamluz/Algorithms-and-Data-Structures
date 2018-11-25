@@ -6,7 +6,7 @@ For example, if ```values = [2, 3, 4]``` and your target sum is ```10```, you mi
 
 ## Function Description
 
-Create a function that receives an integer representing the target sum and a list of integers to calculate the nearest sum from.
+Create a function that receives an integer representing the target sum and a list of integers to calculate (and return) the nearest sum from.
 
 ## Input Format
 
@@ -26,7 +26,7 @@ unboundedKnapsack(targetSum, values)
 
 ## Output Format
 
-An **int** reresenting the maxum sum which is near as possible, but not exceeding, the target sum.
+An **int** representing the maximum sum which is as near as possible, but not exceeding, the target sum.
 
 ## Sample Input
 ```python

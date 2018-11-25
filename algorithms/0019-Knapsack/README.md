@@ -4,6 +4,8 @@ Given an array of integers and a target sum, determine the sum nearest to but no
 
 For example, if ```values = [2, 3, 4]``` and your target sum is ```10```, you might select ```[2, 2, 2, 2, 2]``` or ```[2, 2, 3, 3]```. In this case, you can arrive at exactly the target.
 
+**Source:** [HackerRank](https://www.hackerrank.com/challenges/unbounded-knapsack/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen)
+
 ## Function Description
 
 Create a function that receives an integer representing the target sum and a list of integers to calculate (and return) the nearest sum from.

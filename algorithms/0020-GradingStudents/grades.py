@@ -5,16 +5,13 @@ DIVISOR = 5
 def gradingStudents(grades):
     rounded_grades = []
 
-    for i in range(len(grades)):
-        grade = grades[i]
+    for grade in grades:
+        delta = DIVISOR - (grade % DIVISOR)
+        
         rounded_grade = grade
+        if grade >= MIN_GRADE and delta <= MAX_DELTA:
+            rounded_grade = grade + delta
 
-        if grade >= MIN_GRADE:
-            delta = DIVISOR - (grade % DIVISOR)
-
-            if delta <= MAX_DELTA:
-                rounded_grade = grade + delta
-
-        rounded_grades.insert(i, rounded_grade)
+        rounded_grades.append(rounded_grade)
 
     return rounded_grades   

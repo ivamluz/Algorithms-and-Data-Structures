@@ -34,7 +34,7 @@ gradingStudents([73, 67, 38, 33])
 an array of integers representing grades before rounding
 
 # Constraints
-* ```1 <= n <= 60```
+* ```1 <= len(grades) <= 60```
 
 * ```0 <= grades[i] <= 100```
 

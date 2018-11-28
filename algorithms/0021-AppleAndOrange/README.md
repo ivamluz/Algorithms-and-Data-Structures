@@ -51,13 +51,6 @@ Implement the ```countApplesAndOranges``` function. It should return a tuple rep
 # Input and Output Format
 
 ```python
-house_start = 7,
-house_end = 10,
-apples_tree_location = 4,
-oranges_tree_location = 12 ,
-apple_distances = [2, 3, -4],
-orange_distances = [3, -2, -4]
-
 countApplesAndOranges(
     house_start = 7,
     house_end = 10,

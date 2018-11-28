@@ -81,7 +81,7 @@ kangaroo 1   \_/\L_,           \_/\L_, |         \_/\L_,        |   \_/\L_,     
          -1     0     1     2     3     4     5     6     7     8     9     10     11     12     13
 ```
 
-From the image, it is clear that the kangaroos meet at the same location (number **12** on the number line) after same number of jumps (```4``` jumps), and we return ```YES```.
+From the image, it is clear that the kangaroos meet at the same location (number **12** on the number line) after same number of jumps (**4** jumps), and we return ```YES```.
 
 ## Sample Input 1
 ```python

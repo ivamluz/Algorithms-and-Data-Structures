@@ -1,5 +1,5 @@
-KANGOROO_RESULT_YES = 'YES'
-KANGOROO_RESULT_NO = 'NO'
+KANGAROO_RESULT_YES = 'YES'
+KANGAROO_RESULT_NO = 'NO'
 
 def kangaroo(x1, v1, x2, v2):
     arithmetic_progression = lambda first, difference, n: first + (n - 1) * difference
@@ -9,6 +9,6 @@ def kangaroo(x1, v1, x2, v2):
         kangaroo2_position = arithmetic_progression(x2, v2, i)
 
         if kangaroo1_position == kangaroo2_position:
-            return 'YES'
+            return KANGAROO_RESULT_YES
 
-    return 'NO'
+    return KANGAROO_RESULT_NO

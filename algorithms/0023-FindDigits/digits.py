@@ -6,10 +6,7 @@ def findDigits(number):
     
     count = 0
     for digit in digits:
-        if digit == 0:
-            continue
-
-        if number % digit == 0:
+        if digit > 0 and number % digit == 0:
             count += 1
 
     return count

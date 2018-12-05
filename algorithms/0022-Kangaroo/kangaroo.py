@@ -2,13 +2,13 @@ KANGAROO_RESULT_YES = 'YES'
 KANGAROO_RESULT_NO = 'NO'
 
 def kangaroo(x1, v1, x2, v2):
-    arithmetic_progression = lambda first, difference, n: first + (n - 1) * difference
+    if v1 == v2:
+        return KANGAROO_RESULT_NO
 
-    for i in range(2, 10000):
-        kangaroo1_position = arithmetic_progression(x1, v1, i)
-        kangaroo2_position = arithmetic_progression(x2, v2, i)
+    # see https://www.math10.com/en/algebra/arithmetic-progression.html
+    steps = float((x2 - x1 + v1 - v2)) / (v1 - v2)
 
-        if kangaroo1_position == kangaroo2_position:
-            return KANGAROO_RESULT_YES
-
-    return KANGAROO_RESULT_NO
+    if steps > 0 and steps.is_integer():
+        return KANGAROO_RESULT_YES
+    else:
+        return KANGAROO_RESULT_NO

@@ -19,6 +19,6 @@ def getTotalX(a, b):
                 break
 
         if is_match:
-            count += 1   
+            count += 1
 
     return count

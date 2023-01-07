@@ -2,7 +2,7 @@ def birthdayCakeCandles(candles_heights):
     if not candles_heights:
         return 0
 
-    sorted_candle_heights = sorted(candles_heights, reverse = True)
+    sorted_candle_heights = sorted(candles_heights, reverse=True)
 
     highest = sorted_candle_heights[0]
     candles = 0

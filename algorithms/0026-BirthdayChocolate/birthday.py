@@ -4,10 +4,10 @@ def birthday(numbers, day, month):
 
     numbers_length = len(numbers)
 
-    if (numbers_length == 1 and numbers[0] == expected_sum):
+    if numbers_length == 1 and numbers[0] == expected_sum:
         return 1
 
-    possibilities = 0    
+    possibilities = 0
     for i in range(numbers_length - expected_length + 1):
         current_sum = numbers[i]
         current_length = 1
@@ -20,6 +20,6 @@ def birthday(numbers, day, month):
                 break
 
             if current_length == expected_length and current_sum == expected_sum:
-                possibilities += 1 
+                possibilities += 1
 
     return possibilities

@@ -1,5 +1,6 @@
-KANGAROO_RESULT_YES = 'YES'
-KANGAROO_RESULT_NO = 'NO'
+KANGAROO_RESULT_YES = "YES"
+KANGAROO_RESULT_NO = "NO"
+
 
 def kangaroo(x1, v1, x2, v2):
     if v1 == v2:

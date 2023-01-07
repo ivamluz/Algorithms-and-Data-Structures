@@ -4,18 +4,19 @@
 # Set this to True to enable debugging.
 DEBUG = False
 
-def unboundedKnapsack(targetSum, values, calculated = None):
+
+def unboundedKnapsack(targetSum, values, calculated=None):
     # calculated is initialized as None, instead of as {}, because of the way
     # Python treats default arguments: https://docs.python-guide.org/writing/gotchas/
     # In summary, the calculated value is kept for different function calls and the result
     # for a second list (see the unit tests) are wrongly inferred from the first call.
     if not calculated:
         calculated = {}
-    
+
     if DEBUG:
-        print "targetSum: %s" % targetSum
-        print "values: %s" % values
-        print "calculated: %s" % calculated
+        print(f"targetSum: {targetSum}")
+        print(f"values: {values}")
+        print(f"calculated: {calculated}")
 
     if targetSum in calculated:
         return calculated[targetSum]
@@ -24,7 +25,7 @@ def unboundedKnapsack(targetSum, values, calculated = None):
     # on every execution.
     sorted_values = sorted(values)
 
-    for slot in range (1, targetSum + 1):
+    for slot in range(1, targetSum + 1):
         calculated[slot] = 0
 
         for i in range(0, len(sorted_values)):
@@ -42,7 +43,9 @@ def unboundedKnapsack(targetSum, values, calculated = None):
                 break
 
     if DEBUG:
-        print "calculated before return: %s" % calculated
-        print "targetSum: %s, calculated[%s]: %s" % (targetSum, targetSum, calculated[targetSum])
-    
+        print(f"calculated before return: {calculated}")
+        print(
+            f"targetSum: {targetSum}, calculated[{targetSum}]: {calculated[targetSum]}"
+        )
+
     return calculated[targetSum]

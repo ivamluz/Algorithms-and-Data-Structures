@@ -1,14 +1,14 @@
 def steps(size):
-  if size <= 0:
-    raise ValueError('Size should be greather than 0.')
+    if size <= 0:
+        raise ValueError("Size should be greather than 0.")
 
-  steps = ""
-  for row in range(1, size + 1):
-    spaces_size = size - row
-    
-    steps += ('#' * row) + (' ' * spaces_size)
+    steps = ""
+    for row in range(1, size + 1):
+        spaces_size = size - row
 
-    if row < size:
-      steps += "\n"
+        steps += ("#" * row) + (" " * spaces_size)
 
-  return steps
+        if row < size:
+            steps += "\n"
+
+    return steps

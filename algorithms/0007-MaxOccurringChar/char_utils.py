@@ -1,23 +1,27 @@
-def most_occurring_chars(str):
-  if not str:
-    return None
+def most_occurring_chars(value):
+    if not value:
+        return None
 
-  counts = {}
-  for char in str:
-    if char in counts:
-      counts[char] += 1
-    else:
-      counts[char] = 1
+    counts = {}
 
-  max = 0
-  most_occurring_chars_map = {}
-  for char, count in sorted(counts.iteritems(), key=lambda (k,v): (v,k), reverse=True):
-    if count > max:
-      max = count
+    for char in value:
+        if char in counts:
+            counts[char] += 1
+        else:
+            counts[char] = 1
 
-    if (count == max):
-      most_occurring_chars_map[char] = count
-    else:
-      break
+    max_value = 0
+    most_occurring_chars_map = {}
 
-  return most_occurring_chars_map
+    for char, count in sorted(
+        counts.iteritems(), key=lambda k, v: (v, k), reverse=True
+    ):
+        if count > max_value:
+            max_value = count
+
+        if count == max_value:
+            most_occurring_chars_map[char] = count
+        else:
+            break
+
+    return most_occurring_chars_map

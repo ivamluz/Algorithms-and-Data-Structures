@@ -1,27 +1,28 @@
 import re
 
-def capitalize(str):
-  if not str:
-    return str
 
-  alphanum_regex = re.compile("\w")
+def capitalize(value):
+    if not value:
+        return value
 
-  capitalized_chars_list = []
-  idx = 0
+    alphanum_regex = re.compile(r"\w")
 
-  str_chars_list = list(str)
-  while idx < len(str_chars_list):
-    char = str_chars_list[idx]
+    capitalized_chars_list = []
+    idx = 0
 
-    if idx == 0:
-      capitalized_chars_list.append(char.upper())
-    else:
-      previous_char = str_chars_list[idx - 1]
-      if re.match(alphanum_regex, previous_char):
-        capitalized_chars_list.append(char.lower())
-      else:
-        capitalized_chars_list.append(char.upper())
+    str_chars_list = list(value)
+    while idx < len(str_chars_list):
+        char = str_chars_list[idx]
 
-    idx += 1
+        if idx == 0:
+            capitalized_chars_list.append(char.upper())
+        else:
+            previous_char = str_chars_list[idx - 1]
+            if re.match(alphanum_regex, previous_char):
+                capitalized_chars_list.append(char.lower())
+            else:
+                capitalized_chars_list.append(char.upper())
 
-  return "".join(capitalized_chars_list)
+        idx += 1
+
+    return "".join(capitalized_chars_list)
